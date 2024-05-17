@@ -82,7 +82,7 @@ class Member
 // You have to create  2 books and 2 members. Members One should borrow  book 1 and Member Two should borrow  book 2.
 // TODO: Create 2 books with the following properties
 $Book1 = new Book('The Great Gatsby', 5);
-$Book2 = new Book('To Kill a Mockingbird', 0);
+$Book2 = new Book('To Kill a Mockingbird', 10);
 
 // TODO: Create 2 members with the following properties
 $Member1 = new Member('John Doe');

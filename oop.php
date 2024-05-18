@@ -30,7 +30,7 @@ class Book
             $this->availableCopies--;
             return true;
         } else {
-            echo "Sorry, this book is not available anymore";
+            return false;
         }
     }
 
@@ -63,7 +63,7 @@ class Member
     public function borrowBook($book)
     {
         if ($book->borrowBook()) {
-            echo "Thank you for borrowing the book " . $book->getTitle() . ".\n";
+            echo $this->name."BorroWing successfully '" . $book->getTitle() ."'.\n";
         } else {
             echo "Sorry, this book is not available anymore.\n";
         }
@@ -72,7 +72,7 @@ class Member
     public function returnBook($book)
     {
         if ($book->returnBook()) {
-            echo "Thank you for returning the book " . $book->getTitle() . ".\n";
+            echo $this->name.", Thank you for returning the book '". $book->getTitle() ."'.\n";
         } else {
             echo "Sorry, this book is not available anymore.\n";
         }
